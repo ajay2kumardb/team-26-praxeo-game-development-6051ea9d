@@ -15,7 +15,7 @@ Invalid move results                0             0             SOUTH       3   
 
 *** Keywords ***
 Move character
-    [Arguments]    ${startingX}    ${startingY}    ${startingMoveCount}    ${direction}    ${endingX}    ${endingY}    ${endingMoveCount}
+    [Arguments]    ${startingX}    ${startingY}    ${direction}     ${startingMoveCount}     ${endingX}    ${endingY}    ${endingMoveCount}
     Initialize character xposition with  ${startingX}
     Initialize character yposition with  ${startingY}
     Initialize character moveCount with  ${startingMoveCount}
