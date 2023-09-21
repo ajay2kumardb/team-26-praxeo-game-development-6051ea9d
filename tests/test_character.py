@@ -1,6 +1,7 @@
 from unittest import TestCase
 from levelup.character import Character
 from levelup.position import Position
+from levelup.map import GameMap
 
 class TestCharacterInitWithName(TestCase):
     def test_init(self):
@@ -20,3 +21,7 @@ class TestCharacterInitWithName(TestCase):
         testobj = Character(name)
         self.assertEqual(testobj.getName(), name)
 
+    def test_entermap(self):
+            testobj = Character("Pam")
+            map = GameMap(100)
+            testobj.enterMap(map)
