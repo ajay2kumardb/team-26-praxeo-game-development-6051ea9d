@@ -25,3 +25,10 @@ class TestCharacterInitWithName(TestCase):
             testobj = Character("Pam")
             map = GameMap(100)
             testobj.enterMap(map)
+
+    def test_moveDirection(self):
+        position = Position(3,4)
+        direction = North
+        map = GameMap()
+        newPosition = calculatePosition(position,direction)
+        self.assertFalse(newPoisition,position)
