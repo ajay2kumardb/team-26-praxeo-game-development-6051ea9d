@@ -9,5 +9,11 @@ class TestMap(TestCase):
 
     def test_valid_pos(self):
         pos: tuple = (0,3)
-        testobj = GameMap.isPostionValid(pos)
+        testobj = GameMap.isPositionValid(pos)
         self.assertEqual(testobj,True)
+
+    def test_calc_pos(self):
+        pos: tuple = (0,0)
+        direction = "n"
+        testobj = GameMap.calculatePosition(pos, direction)
+        self.assertEqual(testobj,pos)
