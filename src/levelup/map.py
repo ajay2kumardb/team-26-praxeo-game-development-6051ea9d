@@ -18,7 +18,7 @@ class GameMap:
         else:
             return True
     
-    def calculatePosition(position,direction):
+    def calculatePosition(position, direction):
         x = 0
         y = 0
         a, b = position
