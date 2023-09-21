@@ -20,6 +20,7 @@ class TestPosition(TestCase):
     def test_minpos(self):
         xCoordinates_min = 0
         yCoordinates_min = 0  
+        yCoordinates_min = 0  
         testObj = Position()
         self.assertEqual(xCoordinates_min, testObj.xCoordinates_min)
         self.assertEqual(yCoordinates_min, testObj.yCoordinates_min)  
