@@ -5,20 +5,20 @@ class GameMap:
     def __init__(self, numPositions):
         self.numPositions = 100
 
-    def getTotalPositions():
+    def getTotalPositions(self):
         return numPositions 
 
-    def getPositions():
+    def getPositions(self):
         position = []
 
-    def isPositionValid(positionCord):
+    def isPositionValid(self, positionCord):
         x, y = positionCord
         if (x < 0 or x > 9) or (y < 0 or  y > 9):
             return False
         else:
             return True
     
-    def calculatePosition(position, direction):
+    def calculatePosition(self, position, direction):
         x = 0
         y = 0
         a, b = position
