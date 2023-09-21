@@ -1,3 +1,4 @@
+from levelup.position import Position
 class GameMap:
     numPositions = 100
 
@@ -8,4 +9,4 @@ class GameMap:
         return numPositions 
 
     def getPositions():
-        position = [] 
+        position = []
