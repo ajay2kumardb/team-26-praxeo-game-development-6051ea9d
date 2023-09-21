@@ -11,3 +11,6 @@ class Character:
 
     def getName(self):
         return self.name
+    
+    def enterMap(self, map):
+        self.map = GameMap(map)
