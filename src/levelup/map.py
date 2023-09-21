@@ -1,4 +1,4 @@
-class map:
+class GameMap:
     numPositions = None
 
     def __init__(self, numPositions):
