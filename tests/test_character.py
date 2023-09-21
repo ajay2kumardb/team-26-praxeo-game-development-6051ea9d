@@ -31,4 +31,4 @@ class TestCharacterInitWithName(TestCase):
         position: tuple = (3, 4)
         map = GameMap(100)
         newPosition = map.calculatePosition(position, direction)
-     #   self.assertFalse(newPoisition, position)
+        self.assertNotEqual(newPosition, position)
