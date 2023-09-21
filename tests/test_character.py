@@ -9,6 +9,7 @@ class TestCharacterInitWithName(TestCase):
         self.assertEqual(ARBITRARY_NAME, testobj.name)
 
     def test_position(self):
-        position = Position(10,1)
-        character.position = position
-        self.assertEqual(character.position, position)
+        position = Position()
+        testobj = Character("Ward")
+        testobj.position = position
+        self.assertEqual(testobj.position, position)
