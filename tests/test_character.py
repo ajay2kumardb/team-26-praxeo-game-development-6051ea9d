@@ -10,7 +10,7 @@ class TestCharacterInitWithName(TestCase):
         self.assertEqual(ARBITRARY_NAME, testobj.name)
 
     def test_position(self):
-        position = Position()
+        position = Position(3,2)
         testobj = Character("Ward")
         testobj.position = position
         self.assertEqual(testobj.position, position)
@@ -28,7 +28,7 @@ class TestCharacterInitWithName(TestCase):
 
     def test_moveDirection(self):
         position = Position(3,4)
-        direction = North
-        map = GameMap()
+        direction = "North"
+        map = GameMap(100)
         newPosition = calculatePosition(position,direction)
         self.assertFalse(newPoisition,position)
