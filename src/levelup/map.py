@@ -9,7 +9,11 @@ class GameMap:
         return numPositions 
 
     def getPositions(self):
-        position = []
+        positions = []
+        x = 0
+        y = 0
+        while y < 9:
+            y = y + 1
 
     def isPositionValid(positionCord):
         x, y = positionCord
