@@ -1,8 +1,11 @@
 class GameMap:
-    numPositions = None
+    numPositions = 100
 
     def __init__(self, numPositions):
         self.numPositions = 100
 
     def getTotalPositions():
-        return numPositions  
+        return numPositions 
+
+    def getPositions():
+        position = [] 
