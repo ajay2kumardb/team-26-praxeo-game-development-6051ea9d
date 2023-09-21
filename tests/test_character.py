@@ -13,3 +13,10 @@ class TestCharacterInitWithName(TestCase):
         testobj = Character("Ward")
         testobj.position = position
         self.assertEqual(testobj.position, position)
+
+
+    def test_getName(self):
+        name = "Michael"
+        testobj = Character(name)
+        self.assertEqual(testobj.getName(), name)
+
