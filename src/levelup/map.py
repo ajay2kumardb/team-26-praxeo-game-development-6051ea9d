@@ -12,8 +12,18 @@ class GameMap:
         positions = []
         x = 0
         y = 0
+        cords: tuple = (x,y)
+        positions.append(cords)
         while y < 9:
+            while x < 9:
+                x = x + 1
+                cords: tuple = (x,y)
+                positions.append(cords)
+            x = 0
             y = y + 1
+            cords: tuple = (x,y)
+            positions.append(cords)
+
 
     def isPositionValid(positionCord):
         x, y = positionCord
