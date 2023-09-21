@@ -10,3 +10,12 @@ class TestPosition(TestCase):
         self.assertIsNotNone(testObj.xCoordinates)
         self.assertIsNotNone(testObj.yCoordinates)
         
+     #def test_out(self):
+     #   xCoordinates = 5
+     #   yCoordinates = 4
+     #   testObj = Position(xCoordinates, yCoordinates)
+     #   ExpxCoordinate = 5
+     #   self.assertEqual(testObj.xCoordinates, ExpxCoordinate)
+     #   ExpyCoordinate = 4
+     #   self.assertEqual(testObj.yCoordinates, ExpyCoordinate)
+       
