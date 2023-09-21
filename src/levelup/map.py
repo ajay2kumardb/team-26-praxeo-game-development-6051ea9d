@@ -11,7 +11,7 @@ class GameMap:
     def getPositions(self):
         position = []
 
-    def isPositionValid(self, positionCord):
+    def isPositionValid(positionCord):
         x, y = positionCord
         if (x < 0 or x > 9) or (y < 0 or  y > 9):
             return False
