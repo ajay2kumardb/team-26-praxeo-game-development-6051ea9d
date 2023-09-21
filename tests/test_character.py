@@ -27,8 +27,8 @@ class TestCharacterInitWithName(TestCase):
             testobj.enterMap(map)
 
     def test_moveDirection(self):
-        position = Position(3,4)
-        direction = "North"
+        position: tuple = (3,4)
+        direction = "n"
         map = GameMap(100)
-        newPosition = calculatePosition(position,direction)
-        self.assertFalse(newPoisition,position)
+        newPosition = map.calculatePosition(position, direction)
+        self.assertFalse(newPoisition, position)
