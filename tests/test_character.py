@@ -27,8 +27,9 @@ class TestCharacterInitWithName(TestCase):
             testobj.enterMap(map)
 
     def test_moveDirection(self):
+        testobj = Character("Ward")
         direction = "n"
         position: tuple = (3, 4)
-        map = GameMap(100)
-        newPosition = map.calculatePosition(position, direction)
+ #       map = GameMap(100)
+        newPosition = testobj.moveDirection(direction)
         self.assertNotEqual(newPosition, position)
