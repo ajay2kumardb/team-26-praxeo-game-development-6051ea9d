@@ -15,5 +15,5 @@ class TestMap(TestCase):
     def test_calc_pos(self):
         pos: tuple = (0,0)
         direction = "n"
-        testobj = GameMap.calculatePosition(pos, direction)
+        testobj = GameMap.calculatePosition(self, pos, direction)
         self.assertEqual(testobj,pos)
