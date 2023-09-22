@@ -1,6 +1,7 @@
 import logging
 from dataclasses import dataclass
 from enum import Enum
+from levelup.map import GameMap
 
 
 DEFAULT_CHARACTER_NAME = "Character"
@@ -8,8 +9,8 @@ DEFAULT_CHARACTER_NAME = "Character"
 #TODO: ADD THINGS YOU NEED FOR STATUS
 @dataclass
 class GameStatus:
-    running: bool = False
-    character_name: str = DEFAULT_CHARACTER_NAME
+#    running: bool = False
+#    character_name: str = DEFAULT_CHARACTER_NAME
     # NOTE - Game status will have this as a tuple. The Position should probably be in a class
     current_position: tuple = (-100,-100)
     move_count: int = 0
@@ -33,6 +34,7 @@ class GameController:
 
     def __init__(self):
         self.status = GameStatus()
+        self.map = GameMap(100)
 
     def start_game(self):
         pass
@@ -61,6 +63,7 @@ class GameController:
     def get_total_positions(self) -> int:
         # TODO: IMPLEMENT THIS TO GET THE TOTAL POSITIONS FROM THE MAP - - exists to be
         # testable
-        return -10
+        print(self.map.getTotalPositions)
+        return(self.map.getTotalPositions)
 
     
