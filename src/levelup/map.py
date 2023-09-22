@@ -45,6 +45,9 @@ class GameMap:
                 x = x + 1
             case "w":
                 x = x - 1
+            case _:
+                x = x
+                y = y
         a = a + x
         b = b + y
         pos: tuple = (a,b)
