@@ -2,7 +2,7 @@ from levelup.position import Position
 class GameMap:
     numPositions = 100
 
-    def __init__(self, numPositions):
+    def __init__(self):
         self.numPositions = 100
 
     def getTotalPositions(self):

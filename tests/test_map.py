@@ -17,3 +17,7 @@ class TestMap(TestCase):
         direction = "n"
         testobj = GameMap.calculatePosition(self, pos, direction)
         self.assertEqual(testobj,pos)
+
+    def test_get_total_pos(self):
+        testobj = GameMap.getTotalPositions(self)
+        self.assertEqual(testobj, 100)
