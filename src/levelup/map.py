@@ -32,22 +32,19 @@ class GameMap:
         else:
             return True
     
-    def calculatePosition(self, position, direction):
+    def calculatePosition(self, position: tuple, direction):
         x = 0
         y = 0
         a, b = position
-        match direction:
-            case "n":
+        if direction == "n":
                 y = y - 1
-            case "s":
+        elif direction == "s":
                 y = y + 1
-            case "e":
+        elif direction == "e":
                 x = x + 1
-            case "w":
+        elif direction == "w":
                 x = x - 1
-            case _:
-                x = x
-                y = y
+                
         a = a + x
         b = b + y
         pos: tuple = (a,b)
