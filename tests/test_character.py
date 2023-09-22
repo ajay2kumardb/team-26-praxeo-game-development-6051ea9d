@@ -33,3 +33,8 @@ class TestCharacterInitWithName(TestCase):
  #       map = GameMap(100)
         newPosition = testobj.moveDirection(direction)
         self.assertNotEqual(newPosition, position)
+
+    def test_getStartingPosition(self):
+        testobj = Character("Ward")
+        position = Position(0, 0)
+        self.assertEqual(testobj.getStartingPosition(), position)
