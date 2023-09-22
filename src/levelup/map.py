@@ -6,7 +6,7 @@ class GameMap:
         self.numPositions = 100
 
     def getTotalPositions(self):
-        return numPositions 
+        return self.numPositions 
 
     def getPositions(self):
         positions = []
