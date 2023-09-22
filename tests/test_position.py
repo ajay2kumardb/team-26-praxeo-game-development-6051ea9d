@@ -4,18 +4,7 @@ from levelup.position import Position
 class TestPosition(TestCase):
 
      def test_init(self):
-        xCoordinates = 5
-        yCoordinates = 4
-        testObj = Position(xCoordinates, yCoordinates)
-        self.assertIsNotNone(testObj.xCoordinates)
-        self.assertIsNotNone(testObj.yCoordinates)
-        
-     #def test_out(self):
-     #   xCoordinates = 5
-     #   yCoordinates = 4
-     #   testObj = Position(xCoordinates, yCoordinates)
-     #   ExpxCoordinate = 5
-     #   self.assertEqual(testObj.xCoordinates, ExpxCoordinate)
-     #   ExpyCoordinate = 4
-     #   self.assertEqual(testObj.yCoordinates, ExpyCoordinate)
-       
+        ARBITRARY_COORDINATES = (8,0)
+
+        testObj = Position(ARBITRARY_COORDINATES[0], ARBITRARY_COORDINATES[1])
+        self.assertEqual(testObj.Coordinates, ARBITRARY_COORDINATES)   
