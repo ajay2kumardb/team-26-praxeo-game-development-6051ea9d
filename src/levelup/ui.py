@@ -12,7 +12,7 @@ class GameApp:
         self.controller = GameController()
         print("\nWelcome to LevelUp World \n\nEnter a world of danger, gold, magic, and death at every turn.\n\nIn the LevelUp World you will explore magical landscapes, collect riches beyond your wildest dreams, \nand experiance the adventure of a lifetime!")
         response = input("\nDo you dare enter? Y, N\n")
-        if response != "Y":
+        if (response != "Y" and response != "y"):
             quit()
 
     def prompt(self, menu: str, validation_fn: Callable[[str], bool]) -> str:
