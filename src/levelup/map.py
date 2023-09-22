@@ -32,7 +32,7 @@ class GameMap:
         else:
             return True
     
-    def calculatePosition(self, position: tuple, direction):
+    def calculatePosition(self, position, direction):
         x = 0
         y = 0
         a, b = position
@@ -44,7 +44,7 @@ class GameMap:
                 x = x + 1
         elif direction == "w":
                 x = x - 1
-                
+
         a = a + x
         b = b + y
         pos: tuple = (a,b)
