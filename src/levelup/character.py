@@ -7,7 +7,6 @@ class Character:
 
     def __init__(self, character_name):
         self.name = character_name
-        print(self.name, self.map)
 
     def getName(self):
         return self.name
