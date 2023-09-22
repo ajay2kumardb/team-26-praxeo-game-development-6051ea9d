@@ -34,10 +34,11 @@ class GameController:
 
     def __init__(self):
         self.status = GameStatus()
-        self.map = GameMap(100)
+    #    self.map = GameMap(100)
 
     def start_game(self):
-        pass
+        self.map = GameMap(100)
+
 
     # Pre-implemented to demonstrate ATDD
     # TODO: Update this if it does not match your design (hint - it doesnt)
@@ -63,7 +64,6 @@ class GameController:
     def get_total_positions(self) -> int:
         # TODO: IMPLEMENT THIS TO GET THE TOTAL POSITIONS FROM THE MAP - - exists to be
         # testable
-        print(self.map.getTotalPositions)
-        return(self.map.getTotalPositions)
+        return self.map.getTotalPositions
 
     

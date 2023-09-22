@@ -30,5 +30,6 @@ class TestGameController(TestCase):
 
     def test_getTotalPositions(self):
         testObj = GameController()
+        testObj.start_game()
         totalPositions = 100
         self.assertEqual(testObj.get_total_positions, totalPositions)
