@@ -2,7 +2,7 @@ from levelup.map import GameMap
 from levelup.position import Position
 class Character:
  #   name = ""
-    position = Position(0, 0)
+    position: tuple = (0, 0)
     map = GameMap(100)
 
     def __init__(self, character_name):
@@ -12,7 +12,7 @@ class Character:
     def getName(self):
         return self.name
     
-    def enterMap(self, map):
+    def enterMap(self, Map):
         return GameMap(map)
 
     def moveDirection(self, direction):
