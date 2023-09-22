@@ -19,5 +19,5 @@ class Character:
         self.position = self.map.calculatePosition(self.position, direction)
         return self.position
 
-    def getStartingPosition(self):
+    def getCurrentPosition(self):
         return self.position

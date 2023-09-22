@@ -34,7 +34,7 @@ class TestCharacterInitWithName(TestCase):
         newPosition = testobj.moveDirection(direction)
         self.assertNotEqual(newPosition, position)
 
-    def test_getStartingPosition(self):
+    def test_getCurrentPosition(self):
         testobj = Character("Ward")
         position: tuple = (0, 0)
-        self.assertEqual(testobj.getStartingPosition(), position)
+        self.assertEqual(testobj.getCurrentPosition(), position)
